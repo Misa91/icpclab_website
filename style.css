@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.header-text {
+  text-align: center;
+}
+
+main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.leftside {
+  margin-left: 10%;
+  width: 50%;
+  margin-right: 10%;
+}
+
+.rightside {
+  margin-right: 10%;
+  width: 20%;
+}
+
+.box {
+  width: auto;
+}
+
+.text {
+  width: auto;
+  margin: 8px 0 50px;
+}
+
