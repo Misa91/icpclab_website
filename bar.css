@@ -1,0 +1,114 @@
+.openbtn{
+  display: none;
+	position: relative; /*ボタン内側の基点となるためrelativeを指定。*/
+	cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.openbtn span{
+  display: inline-block;
+  transition: all .4s; /*アニメーションの設定*/
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 5px;
+	background: black;
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+  top:13px;	
+}
+
+.openbtn span:nth-of-type(2) {
+  top:19px;
+}
+
+.openbtn span:nth-of-type(3) {
+  top:25px;
+}
+
+/*ハンバーガーの下にMenu表示*/
+.openbtn span:nth-of-type(3)::after {
+	content:"Menu";
+	position: absolute;
+	top:5px;
+	left:-2px;
+	color: black;
+	font-size: 0.6rem;
+	text-transform: uppercase;
+}
+
+/*アクティブの場合×になる。さらにClose表示になる*/
+.openbtn.active span:nth-of-type(1) {
+  top: 14px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 26px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+.openbtn.active span:nth-of-type(3)::after {
+  content:"Close";
+  transform: translateY(0) rotate(-45deg);
+  top:5px;
+  left:4px;
+}
+
+/* ブラウザ版 */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* デフォルトでは非表示 */
+}
+
+.nav-bar {
+  width: 100%;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar li a {
+  display: block;
+  padding: 10px 20px;
+  margin: 7px;
+  border-right-width: 5px;
+  border: 4px solid gainsboro;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:768px) {
+  /* nav-barをハンバーガーメニューに切り替え */
+  .openbtn {
+    display: block;
+  }
+
+  .nav-bar ul {
+    display: none;
+    justify-content: right;
+  }
+  
+  .menu-items {
+    display: none; /* 初期状態では非表示 */
+  }
+
+  .menu-items.active {
+    display: block; /* メニューがアクティブの場合に表示 */
+  }
+}

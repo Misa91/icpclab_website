@@ -21,54 +21,6 @@ header {
   text-align: center;
 }
 
-/* ハンバーガーメニューの準備 */
-.menu-toggle {
-  display: none; /* 初期状態では非表示 */
-  cursor: pointer;
-  padding: 10px;
-}
-
-.hamburger {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 5px 0;
-}
-
-.menu-items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-items li {
-  display: block;
-  padding: 10px;
-}
-
-.menu-items li a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* ブラウザ版ではこちらを表示 */
-.nav-bar {
-  width: 100%;
-}
-
-.nav-bar ul {
-  list-style: none;
-  display: flex;
-}
-
-.nav-bar li a {
-  display: block;
-  padding: 10px 20px;
-  border-right-width: 5px;
-  border: 3px solid gainsboro;
-  text-decoration: none;
-}
-
 main {
   margin: 50px 0px;
   display: flex;
@@ -101,28 +53,7 @@ footer {
   width: 100%;
 }
 
-
 @media screen and (max-width:768px) {
-  /* nav-barをハンバーガーメニューに切り替え */
-  .menu-toggle {
-    display: block; /* 768px以下の場合に表示 */
-  }
-
-  .nav-bar ul {
-    display: none;
-    justify-content: right;
-  }
-  
-  .menu-items {
-    display: none; /* 初期状態では非表示 */
-  }
-
-  .menu-items.active {
-    display: block; /* メニューがアクティブの場合に表示 */
-  }
-}
-
-@media screen and (max-width:425px) {
   main {
     margin-top: 50px;
     margin-bottom: 50px;

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header {
+  width: 100%;
+}
+
+.header-field {
+  display: flex;
+  height: 75px;
+  background-color: aquamarine;
+}
+
+.header-text {
+  position: absolute;
+  margin: 5px 15px;
+}
+
+main {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: auto;
+}
+
+.text {
+  width: auto;
+  margin: 8px 0 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+}
