@@ -14,32 +14,46 @@ header {
   justify-content: center;
   align-items: center;
   height: 250px;
-  background-color: aquamarine;
+  background-image: url('image/cafe3_s.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header-text {
   text-align: center;
+
+  h1, h3 {
+    color: whitesmoke;
+  }
 }
 
 main {
-  margin: 50px 0px;
+  padding: 50px 0px;
   display: flex;
   justify-content: center;
+  background-image: url('image/23671966.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .leftside {
-  margin: 0px 10%;
   width: 50%;
 }
 
 .rightside {
-  margin-right: 10%;
-  width: 20%;
+  margin-left: 5%;
 }
 
 .box {
   width: auto;
-  margin-bottom: 50px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.box, p {
+  padding: 5px;
 }
 
 .text {
@@ -47,17 +61,34 @@ main {
   margin: 8px 0 50px;
 }
 
+.x-timeline {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 30px;
+}
+
 footer {
   display: flex;
   justify-content: center;
-  height: 70px;
+  text-align: center;
+  padding: 30px 0px 50px;
   width: 100%;
+  background-image: url('image/cafe1_s.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .box {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  h2, p {
+    color: #6c6b6b;
+  }
 }
 
 @media screen and (max-width:768px) {
   main {
-    margin-top: 50px;
-    margin-bottom: 50px;
     display: block;
     justify-content: center;
   }
@@ -71,5 +102,9 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
+  }
+
+  .x-timeline {
+    margin-top: 30px;
   }
 }
