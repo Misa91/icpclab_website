@@ -39,6 +39,7 @@ main {
 
 .box {
   width: auto;
+  margin-bottom: 50px;
 }
 
 .text {

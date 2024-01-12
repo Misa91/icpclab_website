@@ -21,9 +21,7 @@ header {
 }
 
 main {
-  margin: 50px 0px;
-  display: flex;
-  justify-content: center;
+  margin: 50px 10%;
 }
 
 .box {
@@ -32,7 +30,6 @@ main {
 
 .text {
   width: auto;
-  margin: 8px 0 50px;
 }
 
 footer {
