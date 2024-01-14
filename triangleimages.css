@@ -1,0 +1,38 @@
+#image-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+width: auto;
+height: auto;
+overflow: hidden;
+margin: -10px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transform: rotate(45deg);
+transition: transform 0.3s; /* アニメーション効果を追加 */
+}
+
+.image:hover img {
+transform: scale(1.2) rotate(45deg); /* ホバー時に拡大 */
+}
+
+.cursor {
+position: absolute;
+width: 30px;
+height: 30px;
+background-color: black;
+border-radius: 50%;
+pointer-events: none; /* カーソルが画像を遮らないようにする */
+}

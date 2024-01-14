@@ -61,6 +61,28 @@ main {
   margin: 8px 0 50px;
 }
 
+.image-container {
+  position: relative;
+  width: 300px; /* 画像の幅に合わせて調整 */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .x-timeline {
   display: flex;
   justify-content: center;
